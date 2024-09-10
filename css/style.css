@@ -4,9 +4,10 @@ body {
   margin: 0;
   padding: 0;
   background-color: #f4f4f4;
+  color: #333; /* Set default text color */
 }
 
-h1, h2 {
+h1, h2, h3 {
   color: #333;
   text-align: center;
   margin-bottom: 20px;
@@ -14,6 +15,7 @@ h1, h2 {
 
 .container {
   width: 90%;
+  max-width: 800px; /* Limit container width for better readability */
   margin: 0 auto;
   padding: 20px;
   background-color: white;
@@ -24,14 +26,21 @@ h1, h2 {
 /* Navbar Styling */
 .navbar {
   background-color: #333;
-  padding: 15px;
-  width: 101%;
+  padding: 10px;
+  padding-right: 100px;
+  width: 100%;
 }
 
 .navbar .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
 }
 
 /* Side Navigation */
@@ -67,6 +76,7 @@ h1, h2 {
   right: 25px;
   font-size: 36px;
   margin-left: 50px;
+  cursor: pointer; /* Make the close button clickable */
 }
 
 #openSideNav {
@@ -75,8 +85,8 @@ h1, h2 {
   color: #333;
   padding: 15px;
   top: 15px;
-  left: 15px; /* Position it on the left for consistency */
-  z-index: 2; /* Ensure the button is above other elements */
+  left: 15px; 
+  z-index: 2; 
 }
 
 /* Introduction Section */
@@ -88,6 +98,7 @@ h1, h2 {
 .introduction p {
   font-size: 18px;
   color: #555;
+  line-height: 1.6; /* Add spacing between lines */
 }
 
 /* Main Content Styling */
@@ -108,6 +119,7 @@ img {
   max-width: 100%;
 }
 
+/* Input Fields and Buttons */
 input[type="number"] {
   display: block;
   width: 100%;
@@ -116,6 +128,7 @@ input[type="number"] {
   border-radius: 4px;
   border: 1px solid #ccc;
   font-size: 16px;
+  text-align: center; /* Center text in the input */
 }
 
 button {
@@ -135,6 +148,7 @@ button:hover {
   background-color: #555;
 }
 
+/* Result Display */
 .result {
   background-color: #f9f9f9;
   padding: 15px;
@@ -154,37 +168,47 @@ button:hover {
 /* Mobile Responsive */
 @media screen and (max-width: 768px) {
   .container {
-      width: 100%;
+    width: 100%;
+    margin: 0 auto; /* Ensure container stays centered */
+    text-align: center; /* Center text in container */
   }
 
   #openSideNav {
-      left: 15px; /* Keep the menu button on the left */
-      top: 15px;
-      z-index: 2; /* Ensure it stays on top */
+    left: 15px; 
+    top: 15px;
+    z-index: 2; 
   }
 
   .sidenav {
-      width: 0; /* Initially hidden */
-      padding-top: 20px;
-      overflow-y: auto; /* Allow scrolling */
+    width: 0; 
+    padding-top: 20px;
+    overflow-y: auto; 
   }
 
   .sidenav.open {
-      width: 80%; /* Show 80% of the screen when open */
+    width: 80%; 
   }
 
   .result {
-      font-size: 16px;
-      padding: 10px;
+    font-size: 16px;
+    padding: 10px;
   }
 
   input[type="number"], button {
-      width: 100%;
-      margin: 5px 0;
+    width: 100%;
+    margin: 5px 0;
   }
 
   .navbar .container {
-      flex-direction: column; /* Stack navbar elements vertically */
-      align-items: flex-start; /* Align navbar elements to the left */
+    justify-content: center;
+    align-items: center;
+  }
+
+  main {
+    text-align: center; 
+  }
+
+  .introduction {
+    text-align: center; 
   }
 }
