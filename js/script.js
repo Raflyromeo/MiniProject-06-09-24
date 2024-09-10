@@ -1,14 +1,11 @@
-    // Function to open the side navigation
     function openNav() {
         document.getElementById("sideNav").style.width = "250px";
     }
 
-    // Function to close the side navigation
     function closeNav() {
         document.getElementById("sideNav").style.width = "0";
     }
 
-    // Toggle between area and perimeter inputs for each shape section
     function setupToggle(idPrefix) {
         document.getElementById(`${idPrefix}-area`).addEventListener("change", function() {
             document.getElementById(`${idPrefix}-area-inputs`).style.display = "block";
@@ -20,7 +17,6 @@
         });
     }
 
-    // Initialize toggle for all shapes
     setupToggle("triangle");
     setupToggle("parallelogram");
     setupToggle("circle");
@@ -92,14 +88,12 @@
         }
 
         document.getElementById(`${idPrefix}-result`).textContent = `Hasil: ${result}`;
-        document.getElementById(`${idPrefix}-result`).style.display = "block"; // Ensure result shows up
+        document.getElementById(`${idPrefix}-result`).style.display = "block"; 
 
-        // Clear the input fields
         areaInputs.forEach(input => input.value = "");
         perimeterInputs.forEach(input => input.value = "");
     }
 
-    // Event listeners for calculating the area or perimeter
     document.getElementById("triangle-calculate").addEventListener("click", () => calculateAreaOrPerimeter("triangle"));
     document.getElementById("parallelogram-calculate").addEventListener("click", () => calculateAreaOrPerimeter("parallelogram"));
     document.getElementById("circle-calculate").addEventListener("click", () => calculateAreaOrPerimeter("circle"));
@@ -109,7 +103,6 @@
     document.getElementById("rhombus-calculate").addEventListener("click", () => calculateAreaOrPerimeter("rhombus"));
     document.getElementById("kite-calculate").addEventListener("click", () => calculateAreaOrPerimeter("kite"));
 
-    // Event listeners for clearing the inputs
     document.getElementById("triangle-clear").addEventListener("click", function () {
         document.getElementById("triangle-base").value = '';
         document.getElementById("triangle-height").value = '';

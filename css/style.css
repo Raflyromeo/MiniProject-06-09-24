@@ -1,10 +1,9 @@
-/* General Styling */
 body {
   font-family: 'Arial', sans-serif;
   margin: 0;
   padding: 0;
   background-color: #f4f4f4;
-  color: #333; /* Set default text color */
+  color: #333; 
 }
 
 h1, h2, h3 {
@@ -15,7 +14,7 @@ h1, h2, h3 {
 
 .container {
   width: 90%;
-  max-width: 800px; /* Limit container width for better readability */
+  max-width: 800px; 
   margin: 0 auto;
   padding: 20px;
   background-color: white;
@@ -23,7 +22,6 @@ h1, h2, h3 {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Navbar Styling */
 .navbar {
   background-color: #333;
   padding: 10px;
@@ -43,7 +41,6 @@ h1, h2, h3 {
   font-weight: bold;
 }
 
-/* Side Navigation */
 .sidenav {
   height: 100%;
   width: 0;
@@ -76,7 +73,7 @@ h1, h2, h3 {
   right: 25px;
   font-size: 36px;
   margin-left: 50px;
-  cursor: pointer; /* Make the close button clickable */
+  cursor: pointer;
 }
 
 #openSideNav {
@@ -89,7 +86,6 @@ h1, h2, h3 {
   z-index: 2; 
 }
 
-/* Introduction Section */
 .introduction {
   text-align: center;
   margin-top: 30px;
@@ -98,10 +94,9 @@ h1, h2, h3 {
 .introduction p {
   font-size: 18px;
   color: #555;
-  line-height: 1.6; /* Add spacing between lines */
+  line-height: 1.6; 
 }
 
-/* Main Content Styling */
 main {
   margin-top: 20px;
 }
@@ -119,7 +114,6 @@ img {
   max-width: 100%;
 }
 
-/* Input Fields and Buttons */
 input[type="number"] {
   display: block;
   width: 100%;
@@ -128,7 +122,7 @@ input[type="number"] {
   border-radius: 4px;
   border: 1px solid #ccc;
   font-size: 16px;
-  text-align: center; /* Center text in the input */
+  text-align: center; 
 }
 
 button {
@@ -148,7 +142,6 @@ button:hover {
   background-color: #555;
 }
 
-/* Result Display */
 .result {
   background-color: #f9f9f9;
   padding: 15px;
@@ -159,18 +152,17 @@ button:hover {
   border: 1px solid #ddd;
 }
 
-/* Specific Section Styles */
 #triangle-result, #parallelogram-result, #circle-result, #square-result, #rectangle-result, 
 #trapezoid-result, #rhombus-result, #kite-result {
   display: none;
 }
 
-/* Mobile Responsive */
+
 @media screen and (max-width: 768px) {
   .container {
     width: 100%;
-    margin: 0 auto; /* Ensure container stays centered */
-    text-align: center; /* Center text in container */
+    margin: 0 auto; 
+    text-align: center; 
   }
 
   #openSideNav {
